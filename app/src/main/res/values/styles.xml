@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--第一个知识点  使用theme 相当于说 提前给使用这个theme 的activity 中的组件设置了属性 可以避免多次重复设置-->
+    <!--值相同的属性可以直接拿出来 放到theme中-->
+    <!--但是这里不能直接引用res 下面的资源 可能是因为没用加载进来 引用会找不到-->
+    <style name="custoomTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#f00</item>
+        <item name="android:textSize">40sp</item>
+        <item name="test_attr">test_attr</item>
+        <item name="attr_defstyle">@style/attr_defstyle</item>
+        <item name="text1">theme1theme1theme1theme1theme1</item>
+        <item name="text2">theme2theme2theme2theme2theme2</item>
+        <item name="text3">theme3theme3theme3theme3theme3</item>
+        <item name="text4">theme4theme4theme4theme4theme4</item>
+    </style>
+
+    <style name="attr_defstyle">
+        <item name="text1">attr_defstyle1attr_defstyle1attr_defstyle1attr_defstyle1</item>
+        <item name="text2">attr_defstyle2attr_defstyle2attr_defstyle2attr_defstyle2</item>
+    </style>
+
+    <style name="defStyle">
+        <item name="text1">defStyle1defStyle1defStyle1defStyle1</item>
+        <item name="text2">defStyle2defStyle2defStyle2defStyle2</item>
+        <item name="text3">defStyle3defStyle3defStyle3defStyle3</item>
+    </style>
+
+</resources>
